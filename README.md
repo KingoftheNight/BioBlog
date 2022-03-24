@@ -52,9 +52,9 @@ $python manage.py runserver
 
 ![mark](http://img.frankgene.top/blog/20220319/7lLWEmsy3gu8.png)
 
-此时用户即可在浏览器中打开提示网址进行查看(注意在网址后边添加/bioblog)：
+此时用户即可在浏览器中打开提示网址进行查看：
 
-![mark](http://img.frankgene.top/blog/20220319/6L5oEIb175J5.png)
+![mark](http://img.frankgene.top/blog/20220324/z48oPHCoCmC6.png)
 
 
 
@@ -74,9 +74,9 @@ $python manage.py runserver
 
 ### 3.2 登录账户密码设置
 
-网站默认无法更改用户账户密码，用户可以在./browser/views.py中的第47行进行账户和密码修改(用户名必须为纯英文，推荐使用邮箱等复杂账户密码)。此外，用户可以在第49行进行Cookie设置，自定义账户登录缓存时长，单位为秒。
+网站默认无法更改用户账户密码，用户可以在./browser/views.py中的第52行进行账户和密码修改(用户名必须为纯英文，推荐使用邮箱等复杂账户密码, 默认账户名为admin, 默认密码为admin123456)。此外，用户可以在第54行进行Cookie设置，自定义账户登录缓存时长，单位为秒。
 
-![mark](http://img.frankgene.top/blog/20220319/mbUAy13YaGlx.png)
+![mark](http://img.frankgene.top/blog/20220324/GXTj5WvU9uQr.png)
 
 
 
@@ -92,6 +92,14 @@ $python manage.py runserver 0.0.0.0:80
 
 
 
+### 3.4 关于作者页面配置
+
+用户无法直接通过网页修改关于作者页面，需进入后台./static/browser/self/information.md进行修改。
+
+![mark](http://img.frankgene.top/blog/20220324/jhztDbhj0erq.png)
+
+
+
 ## 4. 网站使用教程
 
 在完成上述配置后，用户可以点击登录开始使用网站。
@@ -100,11 +108,11 @@ $python manage.py runserver 0.0.0.0:80
 
 ### 4.1 登录网站
 
-在未登录状态下，主页导航栏仅包含“我的主页”和“登录/退出”按钮。在登录后，主页导航栏添加了“开始创作”和“用户管理”按钮：
+在未登录状态下，主页导航栏仅包含“我的主页”，“关于作者”和“登录/退出”按钮。在登录后，主页导航栏添加了“开始创作”和“用户管理”按钮：
 
-![mark](http://img.frankgene.top/blog/20220319/bajE8Tt9TxDc.png)
+![mark](http://img.frankgene.top/blog/20220324/f0hKPzrttT8E.png)
 
-![mark](http://img.frankgene.top/blog/20220319/zdsNkh2rx3lu.png)
+![mark](http://img.frankgene.top/blog/20220324/ggGxnsumXh2N.png)
 
 
 
@@ -112,7 +120,7 @@ $python manage.py runserver 0.0.0.0:80
 
 在主页会显示用户撰写的文章，按照日期由近到远排列，并支持根据文章标题搜索功能，可支持多词共同搜索，以空格隔开；左侧为用户个人信息和推荐阅读列表。在点击文章后将会跳转到对应文章具体内容：
 
-![mark](http://img.frankgene.top/blog/20220320/3BRjBpaXUimn.png)
+![mark](http://img.frankgene.top/blog/20220324/73QnNd2dVVJD.png)
 
 
 
@@ -120,13 +128,13 @@ $python manage.py runserver 0.0.0.0:80
 
 点击开始创作，将会跳转到网站论文撰写页面。该页面由富文本编辑器构成，支持markdown格式写作，并可以同步浏览。在完成写作后，点击右下角提交，填写必要信息后即可发表：
 
-![mark](http://img.frankgene.top/blog/20220320/1aO8mcIuxbev.png)
+![mark](http://img.frankgene.top/blog/20220324/UwqFeTEnGeNX.png)
 
-![mark](http://img.frankgene.top/blog/20220320/Vk8i3WfC6C0P.png)
+![mark](http://img.frankgene.top/blog/20220324/4ajRyxnrzDAz.png)
 
-![mark](http://img.frankgene.top/blog/20220320/uU3dp7XwjMkF.png)
+![mark](http://img.frankgene.top/blog/20220324/Eh6vM1v302e5.png)
 
-![mark](http://img.frankgene.top/blog/20220320/KUv08OiTSCud.png)
+![mark](http://img.frankgene.top/blog/20220324/Ey87TbW1oVSJ.png)
 
 
 
